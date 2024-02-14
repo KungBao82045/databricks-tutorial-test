@@ -36,13 +36,13 @@ while True:
         print(f"Money: {money}\nHealth: {health}")
 
     elif user_input == "buy":
-        print("\nWelcome to the ghetto black market for criminals! What brings you here?\n- Medic = 75 kr\n- Ticket = 500 kr\n- Leave")
+        print("\nWelcome to the ghetto black market for criminals! What brings you here?\n- medkit = 75 kr\n- Ticket = 500 kr\n- Leave")
         while True:
             user_buy_input = input("> ")
             user_buy_input = user_buy_input.lower()
-            if user_buy_input == "medic" and money >= 75:
+            if user_buy_input == "medkit" and money >= 75:
                 healing = random.randint(0,5)
-                print("You bought a medic and healed yourself up to", health)
+                print("You bought a medkit and healed yourself up to", health)
                 health += healing
                 money -= 75
 
@@ -53,7 +53,7 @@ while True:
                 print("you left the store.")
                 break
 
-            elif (user_buy_input == "medic" and money < 75) or (user_buy_input == "ticket" and money < 499):
+            elif (user_buy_input == "medkit" and money < 75) or (user_buy_input == "ticket" and money < 499):
                 print("You're poor!")
 
 
