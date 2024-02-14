@@ -11,7 +11,7 @@ while True:
     if health < 25 and health > 10:
         print("You are low on health. Consider buying a medkit.")
     elif health <= 10 and health > 0:
-        print("You are critical injured. Medkit is highly recommended!")
+        print("You are critical injured. Medkit is crucial!")
     elif health < 1:
         print("You died. Game over!")
         print(f"Here is your final statistic:\nHealth: {health}\nMoney: {money}")
