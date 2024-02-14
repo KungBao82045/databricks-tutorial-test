@@ -36,7 +36,7 @@ while True:
         print(f"Money: {money}\nHealth: {health}")
 
     elif user_input == "buy":
-        print("\nWelcome to the ghetto black market for criminals! What brings you here?\n- medkit = 75 kr\n- Ticket = 500 kr\n- Leave")
+        print("\nWelcome to the ghetto black market for criminals! What brings you here?\n- Medkit = 75 kr\n- Ticket = 500 kr\n- Leave")
         while True:
             user_buy_input = input("> ")
             user_buy_input = user_buy_input.lower()
