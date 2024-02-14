@@ -25,7 +25,7 @@ while True:
 
     if user_input == "rob":
         if your_chance >= 75:
-            print("You've tacled a person down and ran off with %d kr" % money_stolen)
+            print("You've tackled a person down and ran off with %d kr" % money_stolen)
             money += money_stolen
         elif your_chance < 75 and your_chance >= 50:
             print("The person has no money, so you ran off before the police arrive")
